@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>William Jones - Portfolio</title>
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="styles.css" />
+   <!-- AOS Animation Library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+   <!-- Font Awesome for Social Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   <style>
+      :root {
+         --primary-color: #1b3c32; /* Dark Green */
+         --secondary-color: #2e5f49;
+         --accent-color: #4a7c59;
+         --background-color: #0f1e17;
+         --text-color: #ffffff;
+      }
+
+      body {
+         background-color: var(--background-color);
+         color: var(--text-color);
+         font-family: 'Poppins', sans-serif;
+      }
+
+      header {
+         background-color: var(--primary-color);
+      }
+
+      .button {
+         background-color: var(--accent-color);
+         color: var(--text-color);
+         padding: 10px 20px;
+         border-radius: 5px;
+         text-decoration: none;
+      }
+
+      .button:hover {
+         background-color: var(--secondary-color);
+      }
+
+      .experience-card, .education-card, .project-card {
+         background-color: var(--primary-color);
+         padding: 15px;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      nav ul li a {
+         color: var(--text-color);
+      }
+
+      footer {
+         background-color: var(--primary-color);
+         text-align: center;
+         padding: 10px;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="header-container">
+         <div class="header-left">
+            <h1>William Jones</h1>
+         </div>
+         <div class="header-right">
+            <button class="menu-toggle" id="menu-toggle">
+               <i class="fas fa-bars"></i>
+            </button>
+            <nav id="nav-menu">
+               <ul>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#achievements">Achievements</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero" data-aos="fade-up">
+         <div class="hero-content">
+            <img src="https://dummyimage.com/200x200/cccccc/ffffff.png&text=William+Jones" alt="William Jones Photo" class="hero-photo" />
+            <div class="hero-text">
+               <h2>Welcome to My Professional Portfolio</h2>
+               <p>BSc Hons Business Economics | Aspiring Business Leader</p>
+               <a href="#contact" class="button">Download Resume</a>
+            </div>
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" data-aos="fade-up">
+         <h2>About Me</h2>
+         <p>I am a Business Economics student at Lancaster University with a passion for strategic planning, market research, and problem-solving. I have a strong background in leadership and teamwork, demonstrated through my roles in university sports and previous work experiences.</p>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" data-aos="fade-up">
+         <h2>Work Experience</h2>
+         <div class="experience-card" data-aos="zoom-in">
+            <h3>Delivery Driver</h3>
+            <p><em>Waitrose and Partners | Sep 2021 – Present</em></p>
+            <ul>
+               <li>Managed the timely and accurate delivery of grocery orders for daily schedules of customers.</li>
+               <li>Team supervisor (temporary), managed and motivated a team of 20 drivers, directed daily operations, and resolved customer queries.</li>
+            </ul>
+         </div>
+         <div class="experience-card" data-aos="zoom-in">
+            <h3>Waiter</h3>
+            <p><em>Norfolk Arms Hotel | Jun 2021 – Sep 2021</em></p>
+            <ul>
+               <li>Served customers and managed bar, including processing payments, organizing restocking, and ensuring health and safety of the restaurant.</li>
+               <li>Provided additional cover working extra shifts during busy periods and to cover annual leave.</li>
+            </ul>
+         </div>
+         <div class="experience-card" data-aos="zoom-in">
+            <h3>Office Cleaner</h3>
+            <p><em>Moore Insight Consultancy | Jun 2020 – Jul 2021</em></p>
+            <ul>
+               <li>Managed weekly cleaning for an office of 30 staff.</li>
+               <li>Responsible for maintaining stock for cleaning products and working unsupervised.</li>
+            </ul>
+         </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" data-aos="fade-up">
+         <h2>Education</h2>
+         <div class="education-card" data-aos="zoom-in">
+            <h3>BSc Hons Business Economics</h3>
+            <p><em>Lancaster University | Oct 2022 – Jul 2026</em></p>
+            <p>Predicted 1st</p>
+         </div>
+         <div class="education-card" data-aos="zoom-in">
+            <h3>A-Levels</h3>
+            <p><em>Silverdale School | Sep 2019 – Jul 2021</em></p>
+            <ul>
+               <li>Economics (A)</li>
+               <li>Physics (C)</li>
+            </ul>
+         </div>
+         <div class="education-card" data-aos="zoom-in">
+            <h3>BTEC Sport</h3>
+            <p><em>Silverdale School | Sep 2019 – Jul 2021</em></p>
+            <p>Distinction Star</p>
+         </div>
+         <div class="education-card" data-aos="zoom-in">
+            <h3>GCSEs</h3>
+            <p><em>Notre-Dame High School | Sep 2014 – Jul 2019</em></p>
+            <p>10 subjects</p>
+         </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" data-aos="fade-up">
+         <h2>Skills</h2>
+         <ul>
+            <li>Strategic Planning</li>
+            <li>Market Research</li>
+            <li>Leadership & Team Management</li>
+            <li>Data Analysis</li>
+         </ul>
+      </section>
+
+      <!-- Achievements Section -->
+      <section id="achievements" data-aos="fade-up">
+         <h2>Achievements</h2>
+         <ul>
+            <li>Duke of Edinburgh Gold Award (2021)</li>
+            <li>University Badminton Team Captain (Oct 2023 – Jul 2024)</li>
+            <li>Football Referee for District Football Junior Sunday League (Sep 2019 – Aug 2021)</li>
+            <li>Badminton Coach at Sheffield Badminton Performance Centre (Apr 2019 – Jul 2021)</li>
+            <li>Awards: Duke of Edinburgh Gold Award (2021)</li>
+            <li>Sports: Badminton, Football, Golf, Skiing</li>
+            <li>Member of Economics Society</li>
+            <li>Reader of The Economist</li>
+         </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" data-aos="fade-up">
+         <h2>Contact</h2>
+         <p>Email: <a href="mailto:Will.jones2003@gmail.com">Will.jones2003@gmail.com</a></p>
+         <p>Phone: (+44)07475884585</p>
+      </section>
+   </main>
+
+   <footer>
+      <p>&copy; 2025 William Jones. All rights reserved.</p>
+   </footer>
+
+   <script src="script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>AOS.init();</script>
+</body>
+
+</html>
