@@ -6,34 +6,34 @@
 
 /* Light-mode Colours */
 :root {
-   --primary-bg: #fafafa; /* Soft off-white background */
-   --secondary-bg: #ffffff;
-   --card-bg: #ffffff; 
-   --header-bg: #333; /* Dark header for contrast */
-   --text-color: #333; /* Dark gray text for easy reading */
-   --accent-color: #007bff; /* Soft blue accent */
-   --button-bg: #007bff;
-   --button-hover-bg: #0056b3;
+   --primary-bg: #121212; /* Deep, dark background */
+   --secondary-bg: #1d1f1d; /* Slightly lighter dark for sections */
+   --card-bg: #2c2f2f; /* Darker card background */
+   --header-bg: #1f4d63; /* Lighter shade of HPE Dark Blue */
+   --text-color: #e0e0e0; /* Light gray text for readability */
+   --accent-color: #0D5265; /* HPE Dark Blue */
+   --button-bg: #0D5265;
+   --button-hover-bg: #32DAC8; /* HPE Medium Blue */
 }
 
 /* Dark-mode Colours */
 body.dark-mode {
-   --primary-bg: #121212;
-   --secondary-bg: #1e1e1e;
-   --card-bg: #2c2c2c;
-   --header-bg: #333;
-   --text-color: #e0e0e0;
-   --accent-color: #3498db;
-   --button-bg: #3498db;
-   --button-hover-bg: #2980b9;
+   --primary-bg: #0e0e0e;
+   --secondary-bg: #1c1c1c;
+   --card-bg: #252525;
+   --header-bg: #1f4d63; /* Lighter shade of HPE Dark Blue */
+   --text-color: #dcdcdc;
+   --accent-color: #7630EA; /* HPE Medium Purple */
+   --button-bg: #7630EA;
+   --button-hover-bg: #C140FF; /* HPE Light Purple */
 }
 
 /* Body styles */
 body {
-   font-family: "Helvetica Neue", sans-serif; /* Cleaner font choice */
+   font-family: "Helvetica Neue", sans-serif;
    background: var(--primary-bg);
    color: var(--text-color);
-   padding-top: 80px; /* Less space on top */
+   padding-top: 80px;
    line-height: 1.6;
    transition: background 0.3s, color 0.3s;
 }
@@ -46,7 +46,7 @@ header {
    top: 0;
    width: 100%;
    z-index: 1000;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
    padding: 10px 0;
 }
 
@@ -60,7 +60,7 @@ header {
 }
 
 .header-left h1 {
-   font-size: 1.6rem; /* Smaller, more refined font size */
+   font-size: 1.6rem;
    font-weight: 600;
    letter-spacing: 1px;
 }
@@ -80,7 +80,7 @@ nav ul {
 nav ul li a {
    text-decoration: none;
    color: #fff;
-   font-weight: 500; /* Lighter font weight */
+   font-weight: 500;
    transition: color 0.3s;
 }
 
@@ -92,9 +92,9 @@ nav ul li a:hover {
 .hero {
    background: var(--secondary-bg);
    padding: 60px 20px;
-   border-radius: 12px; /* Rounded corners for a modern look */
+   border-radius: 12px;
    margin-bottom: 40px;
-   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
@@ -127,7 +127,7 @@ nav ul li a:hover {
 .hero-text p {
    font-size: 1.2rem;
    margin-bottom: 20px;
-   color: #666; /* Lighter text for paragraph */
+   color: #bbb;
 }
 
 /* Main Section Styles */
@@ -167,7 +167,7 @@ section h2 {
 
 .experience-card:hover,
 .education-card:hover {
-   transform: translateY(-5px); /* Slight hover lift */
+   transform: translateY(-5px);
 }
 
 /* Projects Section */
@@ -187,7 +187,7 @@ section h2 {
 }
 
 .project-card:hover {
-   transform: translateY(-5px); /* Subtle hover effect */
+   transform: translateY(-5px);
 }
 
 .project-card img {
@@ -204,7 +204,7 @@ section h2 {
 .project-card p {
    padding: 0 15px;
    font-size: 1rem;
-   color: #666;
+   color: #bbb;
 }
 
 /* Button Styles */
@@ -277,4 +277,3 @@ footer {
       flex-direction: column;
    }
 }
-
